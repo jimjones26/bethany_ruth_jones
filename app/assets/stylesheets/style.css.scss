@@ -8,7 +8,8 @@ Last change:    01/04/2014
 -------------------------------------------------------------------*/
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 
-$main-accent-color: #387B22;
+$main-accent-color: #377B22;
+$sec-accent-color: #6FBB4D;
 
 
 
@@ -3783,7 +3784,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 22.5px 15px;
+  padding: 8px 15px;
   font-size: 18px;
   line-height: 20px;
   height: 65px;
@@ -6105,7 +6106,7 @@ hr.arrow-down:after {
     height: 0;
     left: 0;
     width: 100%;
-    border-top: 3px solid #2babcf;
+    border-top: 3px solid $sec-accent-color;
   }
   .dropdown-menu > li > a {
     padding: 7px 30px 7px 10px;
@@ -6143,7 +6144,7 @@ hr.arrow-down:after {
   font-size: 22px;
 }
 .navbar-brand > img {
-  height: 28px;
+  height: 50px;
   width: auto;
 }
 /*** Navbar Links ***/
