@@ -12,11 +12,13 @@
 			</a>
 		</div>
 		<div class="collapse navbar-collapse">
-			<button class="navbar-btn btn btn-red pull-right hidden-sm hidden-xs">Sign In</button>
+			<!-- <button class="navbar-btn btn btn-red pull-right hidden-sm hidden-xs">Sign In</button> -->
 			<ul class="nav navbar-nav navbar-right">
-				<li>
-					<%= link_to "Home", root_path %>
-				</li>
+				<%= nav_link 'Home', root_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
+				<%= nav_link 'Placeholder', placeholder_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
+
+
+
 				<!-- <li class="dropdown active">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Bethany <b class="caret"></b></a>
 					<ul class="dropdown-menu">
@@ -24,9 +26,7 @@
 						<li><a href="index-full.html">Home: Fullscreen</a></li>
 					</ul>
 				</li> -->
-				<li class="hidden-sm">
-					<%= link_to "Placeholder", placeholder_path %>
-				</li>
+
 
 
 
