@@ -1,0 +1,60 @@
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+				<%= image_tag("logo.png", :alt => "Pure Safe Beneficial") %>
+			</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<button class="navbar-btn btn btn-red pull-right hidden-sm hidden-xs">Sign In</button>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<%= link_to "Home", root_path %>
+				</li>
+				<!-- <li class="dropdown active">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Bethany <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="index.html">Home: Default</a></li>
+						<li><a href="index-full.html">Home: Fullscreen</a></li>
+					</ul>
+				</li> -->
+				<li class="hidden-sm">
+					<%= link_to "Placeholder", placeholder_path %>
+				</li>
+
+
+
+
+				<!-- Navbar Search -->
+				<li class="hidden-xs" id="navbar-search">
+					<a href="#">
+						<i class="fa fa-search"></i>
+					</a>
+					<div class="show animated hidden fadeInDown" id="navbar-search-box">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Go!</button>
+							</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- Mobile Search -->
+			<form class="navbar-form navbar-right visible-xs" role="search">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search">
+					<span class="input-group-btn">
+						<button class="btn btn-red" type="button">Search!</button>
+					</span>
+				</div>
+			</form>
+		</div><!--/.nav-collapse -->
+	</div>
+</div>
