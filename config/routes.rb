@@ -1,8 +1,8 @@
 BethanyRuthJones::Application.routes.draw do
   
   root "static_pages#home"
-  get "home" => "static_pages#home"
-  get "placeholder" => "static_pages#placeholder"
+  get "/home" => "static_pages#home"
+  get "/placeholder" => "static_pages#placeholder"
 
 
   
