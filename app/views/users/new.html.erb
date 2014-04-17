@@ -1,0 +1,41 @@
+<% provide(:title, 'Sign up') %>
+<%= render 'layouts/topic_header' %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+			<div class="sign-form">
+				<div class="sign-inner">
+					<h3 class="first-child">Create New Account</h3>
+					<hr>
+					<form role="form">
+						<div class="form-group">
+							<input type="text" class="form-control" id="name" placeholder="Your name" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter your full name here." data-original-title="Name">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="username" placeholder="Username" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter your nickname here." data-original-title="Username">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" placeholder="Enter email" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter a valid email here." data-original-title="Email">
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-6">
+									<input type="password" class="form-control margin-bottom-xs" id="password" placeholder="Password" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter a good password here." data-original-title="Password">
+								</div>
+								<div class="col-sm-6">
+									<input type="password" class="form-control" id="repeat-password" placeholder="Repeat Password" data-toggle="popover" data-trigger="focus" data-content="Confirm your password here." data-original-title="Repeat Password">
+								</div>
+							</div>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+							</label>
+						</div>
+						<button type="submit" class="btn btn-red">Create Account</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> <!-- / .row -->      
+      </div> <!-- / .container -->

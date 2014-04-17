@@ -1,11 +1,13 @@
 BethanyRuthJones::Application.routes.draw do
-  
-  root "static_pages#home"
-  get "/home" => "static_pages#home"
-  get "/placeholder" => "static_pages#placeholder"
+	get "users/new"
+
+	root "static_pages#home"
+	
+	match '/signup',			to: 'users#new',					via: 'get'
+
+	match '/placeholder',		to: 'static_pages#placeholder',		via: 'get'
 
 
-  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
