@@ -2,7 +2,7 @@ module ApplicationHelper
 
 	# Returns the full title on a per-page basis			# documentation comment
 	def full_title(page_title)								# method definition
-		base_title = "Bethany Ruth Jones | Area Manager"	# variable assigment
+		base_title = "Bethany Ruth Jones"					# variable assigment
 		if page_title.empty?								# boolean test
 			base_title										# implicit return
 		else
