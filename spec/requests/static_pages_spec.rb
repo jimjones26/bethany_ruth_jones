@@ -18,4 +18,16 @@ describe "Static pages" do
 		it { should_not have_title('| Home') }
 
 	end
+
+
+	it "should have the right links on the layout" do
+		visit root_path
+
+		click_link "Home"
+		expect(page).to have_title(full_title(''))
+		click_link "Placeholder"
+		expect(page).to have_title(full_title('Placeholder'))
+		click_link "Sign up now!"
+		expect(page).to have_title(full_title('Sign up'))
+	end
 end
