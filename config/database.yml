@@ -1,13 +1,13 @@
 development:
   adapter: postgresql
   host: localhost
-  database: jjones
+  database: bethany_ruth_jones
   host: localhost
 
 test: &test
   adapter: postgresql
   host: localhost
-  database: jjones
+  database: bethany_ruth_jones
   host: localhost
 cucumber:
   <<: *test

@@ -10,6 +10,7 @@ Last change:    01/04/2014
 
 $main-accent-color: #377B22;
 $sec-accent-color: #6FBB4D;
+$topic-footer-bg-color: #EDF5E8;
 
 
 
@@ -6456,7 +6457,7 @@ a.carousel-arrow-next {
 	margin-top: -30px;
 	margin-bottom: 40px;
 	border-bottom: 1px solid #eee;
-	background: #f6f6f6;
+	background: $topic-footer-bg-color;
 }
 .topic h3 {
 	display: inline-block;
@@ -7594,7 +7595,7 @@ body {
 footer {
 	margin-top: 50px;
 	padding: 30px 0;
-	background: #EDF5E8;
+	background: $topic-footer-bg-color;
 }
 footer h4 {
 	margin-bottom: 20px;
