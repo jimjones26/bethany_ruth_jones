@@ -32,7 +32,7 @@ describe "User pages" do
 				before { click_button submit }
 
 				it { should have_title('Sign up') }
-				#it { should have_selector('div.alert alert-danger') }
+				it { should have_selector('div.alert.alert-danger') }
 			end
 		end
 
@@ -55,7 +55,7 @@ describe "User pages" do
 
 				it { should have_link('Sign out') }
 				it { should have_title(full_title('View User Profile')) }
-				#it { should have_selector('div.alert.alert-success', text: 'Welcome') }
+				it { should have_selector('div.alert.alert-success', text: 'Welcome to the Team Awesome training section!') }
 			end
 		end
 	end

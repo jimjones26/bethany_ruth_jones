@@ -8,6 +8,7 @@ Last change:    01/04/2014
 -------------------------------------------------------------------*/
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 
+$dark-accent-color: #1C4F00;
 $main-accent-color: #377B22;
 $sec-accent-color: #6FBB4D;
 $topic-footer-bg-color: #EDF5E8;
@@ -295,12 +296,12 @@ textarea {
 	line-height: inherit;
 }
 a {
-	color: #2babcf;
+	color: $main-accent-color;
 	text-decoration: none;
 }
 a:hover,
 a:focus {
-	color: #2babcf;
+	color: $dark-accent-color;
 	text-decoration: underline;
 }
 a:focus {
@@ -372,7 +373,7 @@ h6,
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 300;
 	line-height: 1.1;
-	color: inherit;
+	color: $dark-accent-color;
 }
 h1 small,
 h2 small,
@@ -3092,7 +3093,7 @@ input[type="button"].btn-block {
 .dropdown-menu > li > a:focus {
 	text-decoration: none;
 	color: #333333;
-	background-color: #f6f6f6;
+	// background-color: #f6f6f6;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -3100,7 +3101,7 @@ input[type="button"].btn-block {
 	color: #333333;
 	text-decoration: none;
 	outline: 0;
-	background-color: #ffffff;
+	background-color: $topic-footer-bg-color;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,

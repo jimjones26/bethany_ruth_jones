@@ -27,7 +27,5 @@ describe "Static pages" do
 		expect(page).to have_title(full_title(''))
 		click_link "Placeholder"
 		expect(page).to have_title(full_title('Placeholder'))
-		click_link "Sign up now!"
-		expect(page).to have_title(full_title('Sign up'))
 	end
 end

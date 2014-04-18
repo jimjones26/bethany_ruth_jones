@@ -12,21 +12,28 @@
 			</a>
 		</div>
 		<div class="collapse navbar-collapse">
-			<!-- <button class="navbar-btn btn btn-sm btn-blue pull-right">Sign In</button> -->
-			<%= link_to "Sign up now!", signup_path, class: "navbar-btn btn btn-blue pull-right" %>
+			<!--<%= link_to "Sign up now!", signup_path, class: "navbar-btn btn btn-blue pull-right" %>-->
 			<ul class="nav navbar-nav navbar-right">
 				<%= nav_link 'Home', root_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
-				<%= nav_link 'Placeholder', placeholder_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
-
-
-
-				<!-- <li class="dropdown active">
+				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Bethany <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="index.html">Home: Default</a></li>
-						<li><a href="index-full.html">Home: Fullscreen</a></li>
+						<%= nav_link 'Home Link', root_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
+						<%= nav_link 'Nested Page', nested_page_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
 					</ul>
-				</li> -->
+				</li>
+				<%= nav_link 'Placeholder', placeholder_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
+
+				<% if signed_in? %>
+					<li><%= link_to "Sign out", signout_path, method: "delete" %></li>
+					<li><%= link_to "Profile", current_user %></li>
+				<% else %>
+					<li><%= link_to "Sign in", signin_path %></li>
+				<% end %>
+
+
+
+				
 
 
 
@@ -34,8 +41,8 @@
 
 				<!-- Navbar Search -->
 				<li class="hidden-xs" id="navbar-search">
-					<a href="#">
-						<i class="fa fa-search"></i>
+					<a href="" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-user"></i><b class="caret"></b>
 					</a>
 					<div class="show animated hidden fadeInDown" id="navbar-search-box">
 						<div class="input-group">

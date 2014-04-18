@@ -1,11 +1,15 @@
 BethanyRuthJones::Application.routes.draw do
 	resources :users
+	resources :sessions, only: [:new, :create, :destroy]
 
 	root "static_pages#home"
 	
-	match '/signup',			to: 'users#new',					via: 'get'
+	match '/signup',				to: 'users#new',					  via: 'get'
+	match '/signin',				to: 'sessions#new',					via: 'get'
+	match '/signout',				to: 'sessions#destroy',     via: 'delete'
 
-	match '/placeholder',		to: 'static_pages#placeholder',		via: 'get'
+	match '/placeholder',			to: 'static_pages#placeholder',		via: 'get'
+	match '/nested_page',			to: 'static_pages#nested_page',		via: 'get'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
