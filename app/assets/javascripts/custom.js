@@ -7,6 +7,10 @@ Created:        11/03/2014
 Last change:    01/04/2014
 -------------------------------------------------------------------*/
 
+$(document).ready(function(){
+  $(".form-control").popover();
+});
+
 /* ===== Navbar Search ===== */
 
 $('#navbar-search > a').on('click', function() {
