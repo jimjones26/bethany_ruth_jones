@@ -25,18 +25,11 @@
 				<%= nav_link 'Placeholder', placeholder_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
 
 				<% if signed_in? %>
-					<li><%= link_to "Sign out", signout_path, method: "delete" %></li>
-					<li><%= link_to "Profile", current_user %></li>
+				<li><%= link_to "Sign out", signout_path, method: "delete" %></li>
+				<li><%= link_to "Profile", current_user %></li>
 				<% else %>
-					<li><%= link_to "Sign in", signin_path %></li>
+				<li><%= link_to "Sign in", signin_path %></li>
 				<% end %>
-
-
-
-				
-
-
-
 
 
 				<!-- Navbar Search -->

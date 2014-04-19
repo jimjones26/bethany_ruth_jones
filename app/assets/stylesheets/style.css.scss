@@ -7130,12 +7130,12 @@ body {
 	padding: 10px;
 }
 .pricing-header h5 {
-	text-transform: uppercase;
+	//text-transform: uppercase;
 	font-weight: 600;
 }
 .pricing-number {
 	padding: 10px;
-	background: #f8f79b;
+	background: #F0E0EE;
 	font-size: 22px;
 }
 .pricing-number > span {
@@ -7150,10 +7150,9 @@ body {
 .pricing-body ul > li {
 	padding: 7px 0;
 	border-bottom: 1px solid #e9e9e9;
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 600;
-	color: #999;
+	//text-transform: uppercase;
+	font-size: 15px;
+	color: #666;
 }
 .pricing-body ul > li:last-child {
 	border-bottom: 0;
