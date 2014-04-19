@@ -1,3 +1,4 @@
+
 <div class="topic">
 	<div class="container">
 		<div class="row">
@@ -5,10 +6,9 @@
 				<h3><%= yield(:title) %></h3>
 			</div>
 			<div class="col-sm-8">
-				<ol class="breadcrumb pull-right hidden-xs">
-					<li><a href="index.html">Home</a></li>
-					<li class="active">About Us</li>
-				</ol>
+				<% if content_for? :breadcrumb %>
+				<%= yield :breadcrumb %>
+				<% end %>
 			</div>
 		</div>
 	</div>

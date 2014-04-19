@@ -1,4 +1,7 @@
 <% provide(:title, 'Getting Started with Arbonne') %>
+<% content_for :breadcrumb do %>
+<%=breadcrumb [ { "User Profile" => current_user }, { "Edit - test" => nil  } ] %>
+<% end %>
 <%= render 'layouts/topic_header' %>
 <div class="container">
 	<div class="row">
