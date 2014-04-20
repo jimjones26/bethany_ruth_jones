@@ -14,7 +14,7 @@ describe "password reset" do
 		end
 
 		it { should have_title(full_title('')) }
-		it { should have_selector('div.alert.alert-success', text: 'Success! An email has been sent with directions to reset your password.') }
+		it { should have_selector('div.alert.alert-success', text: 'Success! An email has been sent with password reset instructions.') }
 
 		it "should send email to user" do
 			#last_email.should include(user.email)
