@@ -1,0 +1,27 @@
+<% provide(:title, "Reset Password") %>
+<%= render 'layouts/topic_header' %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+			<div class="sign-form">
+				<div class="sign-inner">
+					<h3 class="first-child">Reset Your Password</h3>
+					<hr>
+
+
+					<%= form_tag password_resets_path, :method => :post do %>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user"></i></span>
+
+						<%= text_field_tag :email, params[:email], class: "form-control", placeholder: "Enter your email address", autofocus: true %>
+
+					</div>
+					<br>
+					<%= submit_tag "Reset Password", class: "btn btn-blue" %>
+					<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>    
+</div>

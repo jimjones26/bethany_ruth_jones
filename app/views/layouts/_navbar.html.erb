@@ -18,7 +18,7 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Bethany <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<%= nav_link 'Home Link', root_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
+						<%= nav_link 'Back To Root', root_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
 						<%= nav_link 'Nested Page', nested_page_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
 					</ul>
 				</li>
@@ -28,7 +28,8 @@
 				<li><%= link_to "Sign out", signout_path, method: "delete" %></li>
 				<li><%= link_to "Profile", current_user %></li>
 				<% else %>
-				<li><%= link_to "Sign in", signin_path %></li>
+				
+				<%= nav_link 'Sign in', signin_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
 				<% end %>
 
 

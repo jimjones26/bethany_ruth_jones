@@ -2,7 +2,13 @@ module SessionsHelper
 
 	def sign_in(user)
 		remember_token = User.new_remember_token
-		cookies.permanent[:remember_token] = remember_token
+		if params[:remember_me]
+			cookies.permanent[:remember_token] = remember_token
+			flash[:danger] = 'remember me'
+		else
+			cookies[:remember_token] = remember_token
+			flash[:danger] = 'dont remember me'
+		end
 		user.update_attribute(:remember_token, User.hash(remember_token))
 		self.current_user = user
 	end
@@ -18,6 +24,7 @@ module SessionsHelper
 	def current_user
 		remember_token = User.hash(cookies[:remember_token])
 		@current_user ||= User.find_by(remember_token: remember_token)
+		#@current_user ||= User.find_by_remember_token( cookies[:remember_token]) if cookies[:remember_token]
 	end
 
 	def sign_out
