@@ -26,7 +26,9 @@
 	<!-- Wrapper -->
 	<div class="wrapper">
 		<!-- Topic Header -->
-		<%= render 'layouts/topic_header' unless current_page? (root_url) %>
+		
+		<%= render 'layouts/topic_header' unless @disable_topic_header %>
+
 		<div class="container">
 			<%= render :partial => 'layouts/flash_messages', :locals => {:flash => flash} %>
 		</div>
