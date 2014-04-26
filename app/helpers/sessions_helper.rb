@@ -4,10 +4,10 @@ module SessionsHelper
 		remember_token = User.new_remember_token
 		if params[:remember_me]
 			cookies.permanent[:remember_token] = remember_token
-			flash[:danger] = 'remember me'
+			flash[:alert] = 'remember me'
 		else
 			cookies[:remember_token] = remember_token
-			flash[:danger] = 'dont remember me'
+			flash[:alert] = 'dont remember me'
 		end
 		user.update_attribute(:remember_token, User.hash(remember_token))
 		self.current_user = user
@@ -34,5 +34,14 @@ module SessionsHelper
 		current_user.update_attribute(:remember_token, User.hash(User.new_remember_token))
 		cookies.delete(:remember_token)
 		self.current_user = nil
+	end
+
+	def redirect_back_or(default)
+		redirect_to(session[:return_to] || default)
+		session.delete(:return_to)
+	end
+
+	def store_location
+		session[:return_to] = request.url if request.get?
 	end
 end
