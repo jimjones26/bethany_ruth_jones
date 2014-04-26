@@ -7,9 +7,7 @@ class User < ActiveRecord::Base
 	validates :last_name, presence: true, length: { maximum: 20 }
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(?:\.[a-z\d\-]+)*\.[a-z]+\z/i
 	validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
-
-	
-	validates :password, length: { minimum: 6 }
+	validates :password, length: { minimum: 6 }, confirmation: true, presence: true, :if => :password_required?
 
 
 	def User.new_remember_token
@@ -32,6 +30,14 @@ class User < ActiveRecord::Base
 			self[column] = SecureRandom.urlsafe_base64
 		end while User.exists?(column => self[column])
 	end
+
+	protected
+		# Checks whether a password is needed or not. For validations only.
+      	# Passwords are always required if it's a new record, or if the password
+      	# or confirmation are being set somewhere.
+      	def password_required?
+      		!persisted? || !password.nil? || !password_confirmation.nil?
+      	end
 
 	#******* PRIVATE METHODS *******
 	private
