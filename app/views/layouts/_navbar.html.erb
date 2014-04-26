@@ -25,11 +25,11 @@
 				<%= nav_link 'Placeholder', placeholder_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
 
 				<% if signed_in? %>
+				<li><%= link_to "Users", users_path %></li>
 				<li><%= link_to "Sign out", signout_path, method: "delete" %></li>
 				<li><%= link_to "Profile", current_user %></li>
 				<li><%= link_to "Settings", edit_user_path(current_user) %></li>
 				<% else %>
-				
 				<%= nav_link 'Sign in', signin_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
 				<% end %>
 
