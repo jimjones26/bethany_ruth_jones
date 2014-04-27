@@ -10,17 +10,11 @@
 						<th>First Name</th>
 						<th>Last Name</th>
 						<th>Email</th>
+						<th></th>
 					</tr>
 				</thead>
 				<tbody>
-					<% @users.each do |user| %>
-					<tr>
-						<td><%= user.id %></td>
-						<td><%= link_to user.first_name, user %></td>
-						<td><%= user.last_name %></td>
-						<td><%= user.email %></td>
-					</tr>
-					<% end %>
+					<%= render @users %>
 				</tbody>
 			</table>
 			<%= will_paginate %>

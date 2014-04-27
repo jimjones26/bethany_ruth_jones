@@ -1,0 +1,12 @@
+<tr>
+	<td><%= user.id %></td>
+	<td><%= link_to user.first_name, user %></td>
+	<td><%= user.last_name %></td>
+	<td><%= user.email %></td>
+	<td>
+		<% if current_user.admin? && !current_user?(user) %>
+		| <%= link_to "delete", user, method: :delete,
+		data: { confirm: "You sure?" } %>
+		<% end %>
+	</td>
+</tr>
