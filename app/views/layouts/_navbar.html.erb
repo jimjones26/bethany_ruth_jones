@@ -14,28 +14,48 @@
 		<div class="collapse navbar-collapse">
 			<!--<%= link_to "Sign up now!", signup_path, class: "navbar-btn btn btn-blue pull-right" %>-->
 			<ul class="nav navbar-nav navbar-right">
-				<%= nav_link 'Home', root_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
+				<li><%= link_to "Home", root_path %></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Bethany <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<%= nav_link 'Back To Root', root_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
-						<%= nav_link 'Nested Page', nested_page_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
+						<li><%= link_to "Nested Page", nested_page_path %></li>
+						<li><%= link_to "Back To Root", root_path %></li>
+						<li><%= link_to "Placeholder", placeholder_path %></li>
 					</ul>
 				</li>
-				<%= nav_link 'Placeholder', placeholder_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
-
+				
 				<% if signed_in? %>
-				<li><%= link_to "Users", users_path %></li>
-				<li><%= link_to "Sign out", signout_path, method: "delete" %></li>
-				<li><%= link_to "Profile", current_user %></li>
-				<li><%= link_to "Settings", edit_user_path(current_user) %></li>
+
+				<li><%= link_to "Users", users_path %></li>	
+
+				<li class="dropdown">
+					<a href="" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-user"></i><b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><%= link_to "Account Details", edit_user_path(current_user) %></li>
+						<!-- <li><%= link_to "View Profile", current_user %></li> -->
+						<li><%= link_to "Sign out", signout_path, method: "delete" %></li>
+					</ul>
+				</li>
+
+						
+				
 				<% else %>
-				<%= nav_link 'Sign in', signin_path, {:class => ''}, {:wrapper => 'li', :wrapper_class => '', :selected_class => 'active'} %>
+
+				<li>
+					<!--<%= link_to "Sign in", signin_path %>-->
+					<a href="/sessions/new">
+						Sign in <i class="fa fa-sign-in"></i>
+					</a>
+				</li>
+
 				<% end %>
+				
 
 
 				<!-- Navbar Search -->
-				<li class="hidden-xs" id="navbar-search">
+				<li class="hidden" id="navbar-search">
 					<a href="" class="dropdown-toggle" data-toggle="dropdown">
 						<i class="fa fa-user"></i><b class="caret"></b>
 					</a>
