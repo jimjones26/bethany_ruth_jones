@@ -1,8 +1,8 @@
 BethanyRuthJones::Application.routes.draw do
-  get "password_resets/new"
+	get "password_resets/new"
 	resources :users
 	resources :sessions, only: [:new, :create, :destroy]
-  resources :password_resets
+	resources :password_resets
 
 	root "static_pages#home"
 	
@@ -12,6 +12,9 @@ BethanyRuthJones::Application.routes.draw do
 
 	match '/placeholder',			to: 'static_pages#placeholder',		via: 'get'
 	match '/nested_page',			to: 'static_pages#nested_page',		via: 'get'
+	match '/opportunity_vids',		to: 'static_pages#opportunity_vids',   via: 'get'
+
+  match '/getting_started/place_order',    to: 'static_pages#place_order',   via: 'get'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -20,11 +20,15 @@
 
 </head>
 <body>
+
+	<!-- Name -->
+	<%= render 'layouts/name' %>
+
 	<!-- Navigation -->
 	<%= render 'layouts/navbar' %>
 
 	<!-- Wrapper -->
-	<div class="wrapper">
+	<div class="wrapper" style="margin-top: 26px;">
 		<!-- Topic Header -->
 		
 		<%= render 'layouts/topic_header' unless @disable_topic_header %>
