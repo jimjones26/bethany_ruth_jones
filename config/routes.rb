@@ -14,6 +14,8 @@ BethanyRuthJones::Application.routes.draw do
 	match '/nested_page',			to: 'static_pages#nested_page',		via: 'get'
 	match '/opportunity_vids',		to: 'static_pages#opportunity_vids',   via: 'get'
 
+  match '/resources',    to: 'static_pages#resources',   via: 'get'
+
   match '/getting_started/place_order',    to: 'static_pages#place_order',   via: 'get'
 
 
