@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"fla",
+				"flash	flash[…]"
+			],
+			[
+				"click",
+				"click_button"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"si",
+				"sign_in"
+			],
+			[
+				"user_",
+				"user_first_name"
+			],
+			[
+				"ed",
+				"edit_user_path"
+			],
+			[
 				"pass",
 				"password_reset_sent_at"
 			],
@@ -50,10 +82,6 @@
 			[
 				"signin",
 				"signin_path"
-			],
-			[
-				"si",
-				"signup"
 			],
 			[
 				"ha",
@@ -200,22 +228,6 @@
 	"buffers":
 	[
 		{
-			"file": "app/helpers/sessions_helper.rb",
-			"settings":
-			{
-				"buffer_size": 808,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "spec/requests/user_pages_spec.rb",
-			"settings":
-			{
-				"buffer_size": 1682,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "spec/requests/password_resets_spec.rb",
 			"settings":
 			{
@@ -224,10 +236,34 @@
 			}
 		},
 		{
-			"file": "app/controllers/users_controller.rb",
+			"file": "spec/models/user_spec.rb",
 			"settings":
 			{
-				"buffer_size": 466,
+				"buffer_size": 4198,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/requests/user_pages_spec.rb",
+			"settings":
+			{
+				"buffer_size": 3801,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/password_resets_controller.rb",
+			"settings":
+			{
+				"buffer_size": 818,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/requests/authentication_pages_spec.rb",
+			"settings":
+			{
+				"buffer_size": 3404,
 				"line_ending": "Unix"
 			}
 		}
@@ -260,40 +296,63 @@
 	},
 	"file_history":
 	[
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/models/user.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/lib/tasks/rebuild_remember_token.rake",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/requests/password_resets_spec.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/controllers/password_resets_controller.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/sessions/new.html.erb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/password_resets/edit.html.erb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/password_resets/new.html.erb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/users/show.html.erb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/users/new.html.erb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/controllers/users_controller.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/mailers/user_mailer.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/layouts/_navbar.html.erb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/controllers/application_controller.rb",
 		"/Users/jjones/rails_projects/bethany_ruth_jones/app/helpers/sessions_helper.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/controllers/sessions_controller.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/models/user_spec.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/requests/authentication_pages_spec.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/controllers/password_resets_controller.rb",
 		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/requests/user_pages_spec.rb",
 		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/mailers/user_mailer_spec.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/config/environments/development.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/requests/authentication_pages_spec.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/static_pages/place_order.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/static_pages/resources.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/models/user_spec.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/models/user.rb",
 		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/layouts/application.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/assets/stylesheets/style.css.scss",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/layouts/_topic_header.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/config/routes.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/layouts/_name.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/layouts/_navbar.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/layouts/_copyright.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/static_pages/home.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/static_pages/opportunity_vids.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/layouts/_copyright_alt.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/controllers/users_controller.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/users/index.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/users/_user.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/factories.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/db/migrate/20140427023130_add_admin_to_users.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/lib/tasks/sample_data.rake",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/controllers/static_pages_controller.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/controllers/application_controller.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/assets/javascripts/application.js",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/db/migrate/20140427003824_add_index_to_users_remember_token.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/helpers/nav_link_to_helper.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/helpers/active_link_to_helper.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/Gemfile",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/users/new.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/static_pages/nested_page.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/helpers/application_helper.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/controllers/sessions_controller.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/support/utilities.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/sessions/new.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/layouts/_flash_messages.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/password_resets/new.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/password_resets/edit.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/users/edit.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/users/show.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/static_pages/placeholder.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/assets/stylesheets/animate.css",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/shared/_error_messages.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/shared/_flash_messages.html.erb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/Guardfile",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/requests/password_resets_spec.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/lib/tasks/rebuild_remember_token.rake",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/app/mailers/user_mailer.rb",
+		"/Users/jjones/rails_projects/bethany_ruth_jones/config/environments/development.rb",
 		"/Users/jjones/rails_projects/bethany_ruth_jones/config/initializers/setup_mail.rb",
 		"/Users/jjones/rails_projects/bethany_ruth_jones/config/environments/test.rb",
 		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/user_mailer/password_reset.text.erb",
 		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/support/mailer_macros.rb",
 		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/spec_helper.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/static_pages/nested_page.erb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/helpers/application_helper.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/layouts/_topic_header.html.erb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/spec/factories.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/config/routes.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/assets/stylesheets/style.css.scss",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/controllers/static_pages_controller.rb",
-		"/Users/jjones/rails_projects/bethany_ruth_jones/app/views/static_pages/home.html.erb",
 		"/Users/jjones/rails_projects/bethany_ruth_jones/.gitignore",
 		"/Users/jjones/rails_projects/sample_app/app/views/sessions/new.html.erb",
 		"/Users/jjones/rails_projects/sample_app/app/controllers/sessions_controller.rb",
@@ -364,9 +423,7 @@
 		"/Users/jjones/rails_projects/demo_app/README.rdoc",
 		"/Users/jjones/rails_projects/first_app/Gemfile.lock",
 		"/Users/jjones/rails_projects/first_app/Readme.md",
-		"/Users/jjones/rails_projects/first_app/.gitignore",
-		"/Users/jjones/rails_projects/first_app/gemfile",
-		"/Users/jjones/.gemrc"
+		"/Users/jjones/rails_projects/first_app/.gitignore"
 	],
 	"find":
 	{
@@ -384,6 +441,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"pricing",
+			"pricing-number",
+			"dropdown-menu",
+			".navbar-default",
+			"shadow",
+			"navbar",
+			"border",
+			".navbar",
+			".navbar-fixed-top",
+			".navbar-fixed-top, .navbar-fixed-bottom",
+			"navbar-brand",
+			".navbar-fixed-top",
+			".panel-heading",
+			".panel-group .panel-heading > a",
+			".panel-default > .panel-heading",
+			"navbar",
+			"footer .",
+			".footer .social",
+			"footer",
 			"NavLinkHelper",
 			"  	@",
 			"body",
@@ -410,60 +486,6 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/helpers/sessions_helper.rb",
-					"settings":
-					{
-						"buffer_size": 808,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								514,
-								514
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "spec/requests/user_pages_spec.rb",
-					"settings":
-					{
-						"buffer_size": 1682,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								277,
-								316
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/RSpec.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 17.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "spec/requests/password_resets_spec.rb",
 					"settings":
 					{
@@ -474,8 +496,8 @@
 						"selection":
 						[
 							[
-								315,
-								315
+								0,
+								0
 							]
 						],
 						"settings":
@@ -490,19 +512,73 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/controllers/users_controller.rb",
+					"buffer": 1,
+					"file": "spec/models/user_spec.rb",
 					"settings":
 					{
-						"buffer_size": 466,
+						"buffer_size": 4198,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								206,
-								206
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/RSpec.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "spec/requests/user_pages_spec.rb",
+					"settings":
+					{
+						"buffer_size": 3801,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/RSpec.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 909.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/password_resets_controller.rb",
+					"settings":
+					{
+						"buffer_size": 818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								364,
+								364
 							]
 						],
 						"settings":
@@ -512,6 +588,33 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "spec/requests/authentication_pages_spec.rb",
+					"settings":
+					{
+						"buffer_size": 3404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1308,
+								1308
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/RSpec.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 156.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -587,6 +690,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 304.0,
+	"side_bar_width": 247.0,
 	"status_bar_visible": true
 }
