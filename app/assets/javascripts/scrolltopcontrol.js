@@ -55,10 +55,10 @@ var scrolltotop={
 			mainobj.cssfixedsupport=!iebrws || iebrws && document.compatMode=="CSS1Compat" && window.XMLHttpRequest //not IE or IE7+ browsers in standards mode
 			mainobj.$body=(window.opera)? (document.compatMode=="CSS1Compat"? $('html') : $('body')) : $('html,body')
 			mainobj.$control=$('<div id="topcontrol">'+mainobj.controlHTML+'</div>')
-			.css({position:mainobj.cssfixedsupport? 'fixed' : 'absolute', bottom:mainobj.controlattrs.offsety, right:mainobj.controlattrs.offsetx, opacity:0, cursor:'pointer'})
-			.attr({title:''})
-			.click(function(){mainobj.scrollup(); return false})
-			.appendTo('body')
+				.css({position:mainobj.cssfixedsupport? 'fixed' : 'absolute', bottom:mainobj.controlattrs.offsety, right:mainobj.controlattrs.offsetx, opacity:0, cursor:'pointer'})
+				.attr({title:''})
+				.click(function(){mainobj.scrollup(); return false})
+				.appendTo('body')
 			if (document.all && !window.XMLHttpRequest && mainobj.$control.text()!='') //loose check for IE6 and below, plus whether control contains any text
 				mainobj.$control.css({width:mainobj.$control.width()}) //IE6- seems to require an explicit width on a DIV containing text
 			mainobj.togglecontrol()
@@ -70,7 +70,7 @@ var scrolltotop={
 				mainobj.togglecontrol()
 			})
 		})
-}
+	}
 }
 
 scrolltotop.init()

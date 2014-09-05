@@ -1,32 +1,18 @@
 /*------------------------------------------------------------------
 Project:    Paperclip
 Author:     Yevgeny S.
-URL:        https://twitter.com/YevSim
-Version:    1.0
+URL:        http://simpleqode.com/
+            https://twitter.com/YevSim
+Version:    1.1
 Created:        11/03/2014
-Last change:    01/04/2014
+Last change:    14/08/2014
 -------------------------------------------------------------------*/
-
-$(document).ready(function(){
-  $(".form-control").popover();
-});
 
 /* ===== Navbar Search ===== */
 
 $('#navbar-search > a').on('click', function() {
     $('#navbar-search > a > i').toggleClass('fa-search fa-times');
-    $("#navbar-search-box").toggleClass('show hidden animated fadeInDown');
-    return false;
-});
-
-/*===== Pricing Bonus ===== */
-
-$('#bonus .pricing-number > .fa-scissors').on('click', function() {
-    $(this).css('left', '100%');    /* Cutting */
-    setTimeout(function(){          /* Removing the scissors */
-        $('#bonus .pricing-number > .fa-scissors').addClass('hidden');
-        $('#bonus .pricing-body ul').addClass('animated fadeOutDown');
-    }, 2000);
+    $("#navbar-search-box").toggleClass('show hidden animated fadeInUp');
     return false;
 });
 
